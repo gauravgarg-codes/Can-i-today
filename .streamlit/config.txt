@@ -1,0 +1,59 @@
+# ==========================================
+# 🎨 THEME — matches grap_theme.py palette
+# ==========================================
+[theme]
+base                       = "light"
+primaryColor               = "#FF4F00"
+backgroundColor            = "#F4F4F2"
+secondaryBackgroundColor   = "#FFFFFF"
+textColor                  = "#000000"
+font                       = "sans serif"
+
+# Optional theme overrides (Streamlit >= 1.36; safe to omit on older versions)
+# codeBackgroundColor      = "#FFFFFF"
+# dataframeBackgroundColor = "#FFFFFF"
+
+
+# ==========================================
+# 🖥️ SERVER — required for cloud deployment
+# ==========================================
+[server]
+headless             = true
+enableCORS           = false
+enableXsrfProtection = true
+maxUploadSize        = 10
+port                 = 8501
+runOnSave            = true
+fileWatcherType      = "auto"
+
+
+# ==========================================
+# 🌐 BROWSER — suppress telemetry noise
+# ==========================================
+[browser]
+gatherUsageStats = false
+
+
+# ==========================================
+# 📝 CLIENT — smoother UX
+# ==========================================
+[client]
+showErrorDetails   = true
+toolbarMode        = "minimal"
+showSidebarNavigation = false
+
+
+# ==========================================
+# 📋 LOGGER — keep console clean
+# ==========================================
+[logger]
+level = "warning"
+
+
+# ==========================================
+# 🎯 RUNNER — faster dev iterations
+# ==========================================
+[runner]
+magicEnabled    = true
+fastReruns      = true
+enforceSerializableSessionState = false
